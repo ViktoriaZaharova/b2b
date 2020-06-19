@@ -1,0 +1,585 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  background: #fff
+  color: rgba(24, 24, 24, 0.9)
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+.container
+  max-width: 1435px
+  width: 100%
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  box-sizing: border-box
+
+.w-50
+  width: 50%
+
+.w-100
+  width: 100%
+
+strong
+  display: inline-block
+  font-weight: 500
+
+a
+  display: block
+  transition: .3s ease
+  text-decoration: none
+  outline: none
+  &:hover, &:focus
+    text-decoration: none
+
+h1
+  font-size: 42px
+  font-weight: 600
+  text-transform: uppercase
+  margin: 0 0 99px
+  .decor
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 18px
+      background: #223989
+      border-radius: 20px
+    span
+      position: relative
+      z-index: 1
+      display: inline-block
+
+h2
+  position: relative
+  color: #181818
+  font-size: 42px
+  font-weight: 600
+  width: 100%
+
+.h2-decor
+  &:before
+    content: ''
+    position: absolute
+    bottom: 0
+    left: 0
+    border-radius: 8px
+    background: #0066FF
+    width: 220px
+    height: 10px
+  span
+    position: relative
+    z-index: 1
+
+.bg-blue
+  background: #0066FF
+  border: 1px solid #B2B2B2
+
+.color-white
+  color: #fff
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  box-sizing: border-box
+  box-shadow: none
+  font-weight: 600
+  border: none
+    radius: 0
+  height: 70px
+  max-width: 300px
+  width: 100%
+  color: #fff
+
+.btn-accent
+  letter-spacing: 0.1em
+  background: #FF0537
+  border-radius: 8px
+  font-size: 18px
+  font-weight: 800
+  &:hover
+    background: #81031c
+
+.btn-blue
+  max-width: 200px
+  height: 40px
+  background: #223989
+  border-radius: 20px
+  &:hover
+    background: #192963
+
+//header
+header
+  position: absolute
+  z-index: 3
+  width: 100%
+  top: 0
+  left: 0
+  padding: 34px 0
+  .container
+    max-width: 1730px
+    align-items: center
+    justify-content: space-between
+  .list-social
+    margin: 0 40px
+    li
+      a
+        background: #fff
+  .phone
+    margin: 0
+    font-weight: bold
+    font-size: 16px
+    color: #fff
+
+
+//main
+main
+  padding: 100px 0
+  .text
+    max-width: 552px
+    color: rgba(255, 255, 255, 0.9)
+    font-size: 24px
+    letter-spacing: 0.05em
+    margin: 0 0 137px
+    strong
+      font-weight: bold
+  .btn
+    max-width: 300px
+    height: 70px
+    border-radius: 8px
+    font-weight: 800
+    font-size: 18px
+    margin: 0 36px 0 0
+
+
+.bottom-line
+  width: 100%
+  display: flex
+  align-items: center
+  p
+    color: rgba(255, 255, 255, 0.95)
+    font-size: 22px
+    font-weight: 600
+    letter-spacing: 0.05em
+    max-width: 270px
+
+
+
+
+
+//advantages
+.advantages
+  padding: 82px 0 31px
+  h2
+    margin: 0 0 67px
+
+.advantages-wrapper
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 40px
+  &:last-child
+    margin: 0
+
+.advantages-content
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+.advantages-box
+  width: 49%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin: 0 0 47px
+  color: rgba(24, 24, 24, 0.9)
+  font-weight: 300
+  h3
+    font-weight: 500
+    font-size: 22px
+    margin: 0 0 20px
+  .text
+    letter-spacing: 0.05em
+    line-height: 20px
+
+
+.advantages-box__icon
+  margin: 0 0 35px
+  width: 84px
+  height: 72px
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    position: relative
+    z-index: 1
+    width: 35px
+  &:before
+    content: ''
+    position: absolute
+    background: #0066FF
+    border-radius: 10px
+    transform: matrix(0.71, 0.6, -0.83, 0.71, 0, 0)
+    width: 100%
+    height: 100%
+
+.advantages-image
+  display: flex
+  align-items: center
+  justify-content: center
+
+.logo-company
+  max-width: 644px
+
+.advantages-slider
+  padding: 0 120px
+
+.advantages-slide__box
+  max-width: 360px
+  margin: 0 auto
+  h4
+    font-size: 22px
+    font-weight: 500
+    margin: 0 0 17px
+  .text
+    font-size: 18px
+    padding: 12px 0 11px 27px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translate(0,-50%)
+      width: 3px
+      height: 100%
+      background: #0066FF
+      border-radius: 8px
+
+.slick-dots
+  position: relative
+  width: 100%
+  align-items: center
+  justify-content: center
+  display: flex
+  margin: 29px 0 0
+  bottom: 0
+  left: 0
+  .slick-active
+    background: #0066FF
+  li
+    background: #C4C4C4
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    margin: 0 30px 0 0
+    &:last-child
+      margin: 0
+    button
+      display: none
+
+.slick-arrow
+  z-index: 1
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  outline: none
+  box-shadow: none
+  background: #0066FF
+  transition: .3s ease
+  opacity: 1
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    background: url("../img/arrow-left.svg") no-repeat center
+      size: contain
+    width: 23px
+    height: 15px
+    opacity: 1
+  &:hover, &:focus
+    background: #005ac1
+
+.slick-next
+  right: 0
+  &:before
+    background: url("../img/arrow-right.svg") no-repeat center
+      size: contain
+
+.slick-prev
+  left: 0
+
+.slick-slide
+  outline: none
+
+.slick-dotted.slick-slider
+  margin-bottom: 0
+
+//about
+.about
+  padding: 130px 0 78px
+  .container
+    align-items: flex-start
+    justify-content: space-between
+
+.about-content
+  max-width: 580px
+  .text
+    font-size: 20px
+    line-height: 24px
+    margin: 34px 0 0
+    p
+      margin: 0 0 28px
+      &:last-child
+        margin: 0
+
+.about-image
+  display: flex
+  align-items: flex-end
+  justify-content: center
+
+//stages-work
+.stages-work
+  padding: 66px 0 61px
+  .btn
+    margin: 0 auto
+
+.stages-work__wrapper
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+  position: relative
+  padding: 0 50px
+  margin: 67px 0
+  &:before
+    content: ''
+    position: absolute
+    left: 50px
+    top: 88px
+    height: 2px
+    border-radius: 20px
+    background: #A3C8FF
+    width: calc(100% - 350px)
+
+.stages-work__box
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  position: relative
+  z-index: 1
+  max-width: 275px
+  width: 100%
+  font-size: 24px
+  color: rgba(255, 255, 255, 0.9)
+  .number
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    background: #fff
+    width: 30px
+    height: 30px
+    font-weight: bold
+    color: #0066FF
+    margin: 22px 0 37px
+
+//contacts
+.contacts
+  padding: 67px 0 90px
+
+.contacts-wrapper
+  margin: 83px 0 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 0 120px
+
+.maps
+  height: 350px
+  max-width: 717px
+  width: 100%
+  iframe
+    width: 100%
+    height: 100%
+
+.contacts-info
+  max-width: 410px
+  width: 100%
+
+.address
+  font-weight: 300
+  font-size: 24px
+  margin: 0 0 59px
+  color: #181818
+  strong
+    display: block
+    font-size: 26px
+    font-weight: 600
+
+.phone, .mail
+  display: flex
+  color: rgba(24, 24, 24, 0.9)
+  align-items: center
+  font-size: 24px
+  font-weight: 300
+  .icon
+    margin: 0 20px 0 0
+    width: 20px
+    height: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.phone
+  margin: 0 0 10px
+
+.list-social
+  display: flex
+  align-items: center
+  margin: 40px 0 0
+  li
+    margin: 0 9px 0 0
+    &:last-child
+      margin: 0
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      background: #181818
+      border-radius: 50%
+      width: 30px
+      height: 30px
+
+//footer
+footer
+  background: #181818
+  color: #fff
+  padding: 45px 0 40px
+  .container
+    justify-content: space-between
+    align-items: center
+  .list-social
+    margin: 0
+    li
+      a
+        background: #fff
+  .phone
+    color: #fff
+    font-weight: bold
+    font-size: 16px
+    margin: 0
+
+
+.logo
+  max-width: 244px
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 auto
+  li
+    margin: 0 42px 0 0
+    &:last-child
+      margin: 0
+    a
+      font-weight: bold
+      color: #fff
+      &:hover
+        color: #ccc
+
+
+
+
+
+@import "media"
+// Всегда в конце
