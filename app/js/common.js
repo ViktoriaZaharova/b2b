@@ -19,3 +19,23 @@ $('.project-slider__content').slick({
     arrows: false,
     asNavFor: '.project-slider__photo'
 });
+
+$('.main-slider').slick({
+    arrows: false,
+    slidesToShow: 1,
+    vertical: true,
+    verticalSwiping: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    infinite: true
+});
+
+$('.go_to').click(function () {
+    var scroll_el = $(this).attr('href');
+    if ($(scroll_el).length != 0) {
+        $('html, body').animate({
+            scrollTop: $(scroll_el).offset().top
+        }, 500);
+    }
+    return false;
+});

@@ -198,7 +198,7 @@ header {
     color: #fff; }
 
 main {
-  padding: 100px 0; }
+  padding: 165px 0 100px; }
   main .text {
     max-width: 552px;
     color: rgba(255, 255, 255, 0.9);
@@ -229,6 +229,177 @@ main {
     font-weight: 600;
     letter-spacing: 0.05em;
     max-width: 270px; }
+
+.main-slider {
+  background: #fff;
+  border-radius: 8px;
+  width: 445px;
+  margin: 0 auto; }
+
+.main-slider__wrap {
+  position: relative;
+  padding: 0 90px;
+  max-width: 639px;
+  width: 100%; }
+
+.icon-heart {
+  position: absolute;
+  z-index: 2; }
+
+.icon-heart1 {
+  left: 12px;
+  bottom: 70px;
+  -webkit-transform: rotate(-89.37deg);
+          transform: rotate(-89.37deg);
+  width: 141px; }
+
+.icon-heart2 {
+  opacity: .8;
+  width: 62px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: 317px;
+  left: 5px; }
+
+.icon-heart3 {
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  width: 79px;
+  top: -42px;
+  left: 50px; }
+
+.icon-heart4 {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  width: 50px;
+  opacity: .8;
+  right: 212px;
+  top: -45px; }
+
+.icon-heart5 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 79px;
+  top: 100px;
+  right: 10px; }
+
+.icon-heart6 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 40px;
+  opacity: .8;
+  right: 40px;
+  bottom: 255px; }
+
+.icon-heart7 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 79px;
+  bottom: 60px;
+  right: 56px; }
+
+.main-slider__box {
+  height: 635px;
+  margin: 0 auto;
+  position: relative;
+  padding: 16px 23px 19px;
+  color: #262626;
+  font-size: 14px; }
+  .main-slider__box .top-line {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .main-slider__box .top-line .name {
+      color: #3AABC3;
+      font-size: 14px;
+      font-weight: 600; }
+  .main-slider__box .icon-logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 14px 0 0; }
+
+.btn-order {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 43px;
+  padding: 0 21px;
+  color: #262626;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0;
+  background: #fff;
+  border: 1px solid #3AABC3;
+    border-radius: 8px; }
+  .btn-order .text-submit {
+    color: #0095F6;
+    font-weight: bold;
+    letter-spacing: 0.05em; }
+
+.tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  margin: 12px 0; }
+  .tag strong {
+    font-weight: bold;
+    margin: 0 5px 0 0; }
+
+.line-share {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px; }
+
+.share-links {
+  margin: 0 18px 0 0; }
+  .share-links:last-child {
+    margin: 0 0 0 auto; }
+
+.main-slider__box-photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 14px auto 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  height: 400px; }
+  .main-slider__box-photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
 
 .advantages {
   padding: 82px 0 31px; }
@@ -842,6 +1013,9 @@ input {
   height: 50px;
   max-width: 300px;
   font-weight: 800; }
+
+.best-work {
+  padding: 100px 0 117px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
