@@ -25,7 +25,7 @@ $('.main-slider').slick({
     slidesToShow: 1,
     vertical: true,
     verticalSwiping: true,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,
     speed: 1500,
@@ -83,3 +83,7 @@ $(document).ready(function () {
     });
 });
 //end
+
+$('.btn-burger').click(function () {
+   $('.mobile-menu').fadeToggle();
+});

@@ -3,23 +3,398 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1750px)
+  .container
+    padding: 0 10px
+
+
+
+@media only screen and (max-width : 1400px)
+  h1
+    font-size: 30px
+
+  .best-work__content
+    max-width: 550px
+
+@media only screen and (max-width : 1300px)
+  .main-content
+    max-width: 40%
+
+@media only screen and (max-width : 1280px)
+  .menu li
+    margin: 0 20px 0 0
+
+  .logo
+    width: 150px
+
+  .bottom-line p
+    font-size: 16px
+
+  .best-work__title
+    font-size: 30px
+    line-height: normal
+
+  .best-work .list-social li a
+    width: 40px
+    height: 40px
+    padding: 10px
+    svg
+      width: 18px
+      height: 18px
+
+  .best-work__content .text
+    font-size: 18px
+
+  .tabs__caption li
+    margin: 0 0 15px
+
+  .tabs__caption li
+    max-width: 510px
+
+  .best-work__content
+    max-width: 510px
+
+
+
 @media only screen and (max-width : 1200px)
-	/**/
+  header
+    .menu
+      li
+        a
+          font-size: 14px
+    .list-social
+      margin: 0 20px
+
+  .tabs
+    margin: 40px 0 0
+
+  .best-work__content
+    max-width: none
+    .d-mobile
+      display: block
+      margin: 0 auto 20px
+
+  .tabs__content
+    flex-direction: column
+    align-items: center
+    .list-social
+      margin: 26px auto 50px
+      li
+        margin: 0 20px 0 0
+    .bottom-line
+      justify-content: center
+
+  .tabs__caption
+    margin: 0 0 40px
+
+  .main-slider__wrap
+    display: none
+
+  .best-work__content .text
+    max-width: none
+    text-align: center
+
+  .best-work .list-social
+    justify-content: center
+
+
+  .best-work__title, .price-wrapper
+    text-align: center
+
 
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width : 1120px)
+  .main-content
+    width: 100%
+    order: 1
+    max-width: none
+    h1
+      display: none
+
+  .title-mobile
+    display: block
+    width: 100%
+    text-align: center
+
+  main
+    .text
+      text-align: center
+      margin: 10px auto 24px
+      max-width: none
+
+  .bottom-line
+    justify-content: center
+
+  .main-slider__wrap
+    margin: 0 auto
+
+@media only screen and (max-width : 1040px)
+  header
+    .menu
+      display: none
+
+  .btn-burger
+    display: block
+
 @media only screen and (max-width : 992px)
-	/**/
+  .advantages
+    padding: 35px 0 0
+    .w-50
+      width: 100%
+    .container
+      flex-direction: column
+      align-items: center
+
+  .advantages-image
+    order: -1
+
+  .logo-company
+    margin: 0 auto
+    padding: 39px 0 36px
+    position: relative
+    max-width: none
+    img
+      position: relative
+      z-index: 1
+      width: 267px
+      margin: 0 auto
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      background: #F5F7F8
+      transform: translate(-50%,0)
+      top: 0
+      width: calc(100% + 30px)
+      height: 100%
+
+  .advantages-slider
+    position: relative
+    padding: 0 50px 40px
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      background: #F5F7F8
+      transform: translate(-50%,0)
+      top: 0
+      width: calc(100% + 30px)
+      height: 100%
+
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+  header
+    padding: 5px 0
+
+  .logo
+    width: 110px
+
 
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 650px)
+  header
+    .btn, .list-social
+      display: none
+
+  main
+    padding: 53px 0 40px
+    .text
+      font-size: 16px
+
+  .bottom-line
+    p
+      display: none
+    .btn
+      margin: 0
+      height: 40px
+      font-size: 15px
+
+  h1
+    font-size: 20px
+    margin: 0 auto 45px
+
+  h2
+    font-size: 20px
+    text-align: center
+    &:before
+      display: none
+
+  .main-slider__wrap
+    max-width: 355px
+    padding: 0 60px
+
+  .main-slider
+    width: 247px
+
+  .main-slider__box
+    height: 352px
+    padding: 9px 12px 10px
+
+  .main-slider__box-photo
+    height: 222px
+    margin: 7px auto 9px
+
+  .main-slider__box .top-line .name
+    font-size: 11px
+
+  .main-slider__box .icon-logo
+    width: 27px
+    height: 27px
+    margin: 0 8px 0 0
+
+  .icon-heart1
+    width: 78px
+    bottom: 42px
+
+  .icon-heart2
+    bottom: 178px
+    width: 34px
+    left: 15px
+
+  .icon-heart3
+    width: 43px
+    left: 38px
+    top: -22px
+
+  .icon-heart4
+    width: 22px
+    right: 92px
+    top: -25px
+
+  .icon-heart5
+    width: 43px
+    right: 4px
+    top: 54px
+
+  .icon-heart6
+    width: 22px
+    right: 25px
+    bottom: 140px
+
+  .icon-heart7
+    width: 43px
+    bottom: 38px
+    right: 30px
+
+  .tag
+    margin: 6px 0
+    font-size: 8px
+    padding: 0 10px
+
+  .btn-order
+    height: 23px
+    font-size: 8px
+    padding: 0 11px
+
+  .line-share
+    padding: 0 10px
+
+  .share-links
+    width: 13px
+    height: 13px
+    margin: 0 11px 0 0
+
+  .advantages
+    h2
+      margin: 0 auto 10px
+
+  .advantages-image
+    max-width: 321px
+    margin: 0 auto 20px
+
+  .advantages-box
+    width: 100%
+    align-items: center
+    text-align: center
+    font-size: 15px
+    margin: 0 0 16px
+    h3
+      font-size: 16px
+      margin: 0 auto 15px
+
+  .advantages-box__icon
+    width: 76px
+    height: 64px
+    margin: 0 auto 18px
+    img
+      width: 30px
+
+  .advantages-wrapper
+    margin: 0
+
+  .advantages-slider
+    .slick-arrow
+      top: 38%
+
+  .slick-arrow
+    width: 30px
+    height: 30px
+    &:before
+      width: 15px
+      height: 12px
+
+  .advantages-slide__box h4
+    font-size: 16px
+    margin: 0 0 10px
+
+  .advantages-slide__box .text
+    font-size: 14px
+    padding: 7px 16px
+    font-weight: 300
+
+  .advantages-slide__box .text:before
+    width: 2px
+
+  .slick-dots
+    margin: 17px 0 0
+    li
+      width: 12px
+      height: 12px
+      margin: 0 17px 0 0
+
+  .best-work
+    padding: 34px 0 40px
+
+  .tabs
+    margin: 24px 0 0
+
+  .tabs__caption
+    margin: 0 0 9px
+    li
+      font-size: 12px
+      background: #223989
+      text-align: center
+      width: 170px
+      height: 40px
+    .active
+      background: linear-gradient(83.27deg, #FF0537 0%, #223989 100%)
+
+  .best-work__title
+    font-size: 18px
+
+    .decor
+      &:before
+        display: none
+
+  .best-work__content .text
+    font-size: 14px
+
+  .price-wrapper
+    margin: 10px auto 13px
+    font-size: 15px
+    .decor
+      &:before
+        display: none
+
+
 @media only screen and (max-width : 480px)
-	/**/
+  header
+    .phone
+      display: none
 
 
 /* Custom, iPhone Retina */
