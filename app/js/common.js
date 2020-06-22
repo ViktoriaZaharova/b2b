@@ -121,3 +121,5 @@ $("form").submit(function () {
     });
     return false;
 });
+
+$("[name='phone']").mask("+7 (999) 999-9999");
