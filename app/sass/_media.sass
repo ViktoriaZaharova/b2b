@@ -16,6 +16,14 @@
   .best-work__content
     max-width: 550px
 
+  label
+    width: 24%
+
+  .contacts-wrapper
+    padding: 0
+
+
+
 @media only screen and (max-width : 1300px)
   .main-content
     max-width: 40%
@@ -54,16 +62,28 @@
   .best-work__content
     max-width: 510px
 
+  .project-slider__photo
+    max-width: 680px
+    padding: 0 70px
+
+  .project-slider__content
+    width: calc(100% - 680px)
+    padding: 0 0 0 40px
+
+
+
 
 
 @media only screen and (max-width : 1200px)
-  header
+  header, footer
     .menu
       li
         a
           font-size: 14px
     .list-social
       margin: 0 20px
+
+
 
   .tabs
     margin: 40px 0 0
@@ -101,7 +121,32 @@
   .best-work__title, .price-wrapper
     text-align: center
 
+  .form
+    padding: 30px 20px 23px
+    button
+      margin: 0 0 20px
+      max-width: 49%
 
+  label
+    width: 49%
+    max-width: none
+    margin: 0 0 20px
+
+  .callback-img
+    display: none
+
+  .stages-work__box
+    font-size: 16px
+    max-width: 200px
+
+  .stages-work__wrapper
+    padding: 0
+    &:before
+      left: 20px
+      width: calc(100% - 200px)
+
+  .maps
+    max-width: 515px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1120px)
@@ -129,8 +174,19 @@
   .main-slider__wrap
     margin: 0 auto
 
+  .project-slider__photo
+    max-width: 580px
+    padding: 0 60px
+
+  .project-slider__content
+    width: calc(100% - 580px)
+    padding: 0 0 0 40px
+
+  .project-slider__photo-box
+    width: 100%
+
 @media only screen and (max-width : 1040px)
-  header
+  header, footer
     .menu
       display: none
 
@@ -182,21 +238,77 @@
       width: calc(100% + 30px)
       height: 100%
 
+  .project-wrapper
+    flex-direction: column
+    align-items: center
 
+  .project-slider__content
+    width: 100%
+    padding: 0
+    margin: 32px 0 0
+
+  .maps
+    max-width: 335px
 
 /* Small Devices, Tablets */
+@media only screen and (max-width : 830px)
+  .stages-work__box
+    max-width: none
+    width: 100%
+    margin: 0 0 30px
+    flex-direction: row
+    align-items: center
+    &:last-child
+      margin: 0
+    .number
+      margin: 0 10px
+    .text
+      br
+        display: none
+
+  .stages-work__wrapper
+    &:before
+      display: none
+
 @media only screen and (max-width : 768px)
   header
     padding: 5px 0
 
+  footer
+    padding: 13px 0
+
   .logo
     width: 110px
 
+  .about-image
+    max-width: 335px
 
+  .about
+    .container
+      align-items: center
+
+  .about-content
+    width: calc(100% - 335px)
+    .text
+      font-size: 16px
+      line-height: normal
+
+  .contacts-wrapper
+    flex-direction: column
+    align-items: center
+
+  .maps
+    order: -1
+    max-width: none
+
+  .contacts-info
+    width: 100%
+    margin: 22px 0 0
+    max-width: none
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 650px)
-  header
+  header, footer
     .btn, .list-social
       display: none
 
@@ -390,9 +502,157 @@
       &:before
         display: none
 
+  .project
+    padding: 32px 0 40px
+    .description
+      margin: 28px auto 55px
+      font-size: 15px
+
+  .project-slider__photo-box
+    height: 266px
+    padding: 0 74px
+
+  .project-slider__photo, .project-wrapper
+    padding: 0
+
+  .links-project
+    font-size: 18px
+    margin: 0 0 13px
+
+  .name-project
+    margin: 0 0 19px
+    font-size: 16px
+
+  .project-slider__content-box .box-text
+    font-size: 15px
+    margin: 0 0 18px
+
+  .project-slider__content-box .btn
+    margin: 32px auto 0
+    height: 40px
+    font-size: 15px
+
+  .project-slider__content h6
+    font-size: 16px
+
+
+  .callback
+    background: #F5F7F8
+    padding: 31px 0 40px
+
+  .form
+    margin: 39px 0 0
+    button
+      max-width: none
+      width: 100%
+      margin: 25px auto 0
+      font-size: 15px
+      height: 40px
+
+  label
+    max-width: none
+    width: 100%
+
+  .percent
+    font-size: 13px
+
+  input
+    font-size: 16px
+    line-height: 20px
+    padding: 0 5px 8px
+
+  .btn
+    font-size: 15px
+
+  .about
+    padding: 30px 0 40px
+    .container
+      flex-direction: column
+      align-items: center
+    .d-mobile
+      display: flex
+      margin: 26px auto
+
+  .about-content
+    width: 100%
+    .text
+      font-size: 14px
+      margin: 0
+      p
+        margin: 0 0 20px
+        &:last-child
+          margin: 0
+
+  .about-image
+    display: none
+
+  .stages-work__box
+    .number
+      margin: 0 23px 0 0
+      min-width: 30px
+
+
+  .stages-work__icon
+    display: none
+
+  .stages-work
+    padding: 29px 0 40px
+    .btn
+      height: 40px
+      font-size: 15px
+
+  .stages-work__wrapper
+    margin: 44px 0
+
+  .contacts
+    padding: 29px 0 40px
+
+  .contacts-wrapper
+    margin: 31px 0 0
+
+  .maps
+    height: 173px
+
+  .address
+    text-align: center
+    margin: 0 0 30px
+    font-size: 14px
+    strong
+      font-size: 18px
+
+  .phone, .mail
+    text-align: center
+    font-size: 14px
+    justify-content: center
+    .icon
+      margin: 0 13px 0 0
+      width: 15px
+
+  .list-social
+    justify-content: center
+    margin: 40px 0 0
+    li
+      margin: 0 28px 0 0
+      &:last-child
+        margin: 0
+
+  .modal__div .modal__wrapper
+    padding: 30px
+    h2
+      font-size: 20px
+      margin: 0 auto 30px
+
+  .modal-form label
+    margin: 0 0 20px
+    input
+      height: 50px
+      font-size: 14px
+
+  .modal-form button
+    height: 50px
 
 @media only screen and (max-width : 480px)
-  header
+  header, footer
     .phone
       display: none
 

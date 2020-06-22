@@ -10,7 +10,15 @@ $('.project-slider__photo').slick({
     dots: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
-    asNavFor: '.project-slider__content'
+    asNavFor: '.project-slider__content',
+    responsive: [
+        {
+            breakpoint: 650,
+            settings: {
+                arrows: false
+            }
+        }
+    ]
 });
 
 $('.project-slider__content').slick({
@@ -25,7 +33,7 @@ $('.main-slider').slick({
     slidesToShow: 1,
     vertical: true,
     verticalSwiping: true,
-    // autoplay: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     infinite: true,
     speed: 1500,
@@ -86,4 +94,17 @@ $(document).ready(function () {
 
 $('.btn-burger').click(function () {
    $('.mobile-menu').fadeToggle();
+});
+
+$("form").submit(function () {
+    $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize()
+    }).done(function () {
+        $(this).find("input").val("");
+        alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+        $("form").trigger("reset");
+    });
+    return false;
 });
