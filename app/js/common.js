@@ -11,6 +11,7 @@ $('.project-slider__photo').slick({
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
     asNavFor: '.project-slider__content',
+    fade: true,
     responsive: [
         {
             breakpoint: 650,
@@ -25,6 +26,7 @@ $('.project-slider__content').slick({
     slidesToShow: 1,
     dots: false,
     arrows: false,
+    fade: true,
     asNavFor: '.project-slider__photo'
 });
 
@@ -46,6 +48,7 @@ $('.go_to').click(function () {
         $('html, body').animate({
             scrollTop: $(scroll_el).offset().top
         }, 500);
+        $('.mobile-menu').fadeOut();
     }
     return false;
 });
@@ -94,6 +97,16 @@ $(document).ready(function () {
 
 $('.btn-burger').click(function () {
    $('.mobile-menu').fadeToggle();
+});
+
+$(document).mouseup(function (e){ // событие клика по веб-документу
+    var div = $(".mobile-menu"); // тут указываем ID элемента
+    var btn = $('.btn-burger');
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && btn.has(e.target).length === 0
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+        div.fadeOut(); // скрываем его
+    }
 });
 
 $("form").submit(function () {
